@@ -1,0 +1,25 @@
+<%- include('includes/header')%>
+<div class="container" style="width: 50%; margin-top: 2rem;">
+    <form action="/login/new-acc" method="post" class="text-center">
+        <!-- Email input -->
+  <div class="form-outline mb-4 col-6" style="margin: auto;">
+    <input type="email" id="form2Example1" class="form-control" name="email" placeholder="Email" />
+    
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4 col-6" style="margin: auto;">
+    <input type="password" id="form2Example2" class="form-control" name="pwd" placeholder="Password"/>
+    
+  </div>
+
+
+  
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Create Account</button>
+
+ 
+        
+    </form>
+</div>
+    <%- include('includes/footer')%>

@@ -1,0 +1,39 @@
+<%- include('includes/header')%>
+<div class="container" style="width: 50%; margin-top: 2rem;">
+    <form action="/login" class="text-center" method="post">
+        <!-- Email input -->
+  <div class="form-outline mb-4 col-6" style="margin: auto;">
+    <input type="email" id="form2Example1" class="form-control" name="email" placeholder="Email" />
+    
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4 col-6" style="margin: auto;">
+    <input type="password" id="form2Example2" class="form-control" name="pwd" placeholder="Password"/>
+    
+  </div>
+
+  <!-- 2 column grid layout for inline styling -->
+  <div class="row mb-4">
+   
+
+    <div class="col">
+      <!-- Simple link -->
+      <a href="#!">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p><%= error %></p>
+    <p>Not a member? <a href="/login/new">Register</a></p>
+    <p>or sign up with:</p>
+    
+  </div>
+        
+    </form>
+</div>
+    <%- include('includes/footer')%>
